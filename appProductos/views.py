@@ -67,7 +67,7 @@ def agregarCarro(request, idProd):
         # dar mensaje
         msj = 'Producto no disponible'
         # redireccionar a 'verProducto'
-        return verProducto(request, idProd, msj)
+    return verProducto(request, idProd, msj)
 def verCarrito(request):
     context = consultarCarro(request)
     return render(request, 'productos/carrito.html', context)
