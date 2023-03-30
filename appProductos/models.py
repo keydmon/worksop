@@ -22,7 +22,6 @@ class Producto(models.Model):
      imgGrande = models.ImageField(upload_to='productos', null=True) 
      imgPeque = models.ImageField(upload_to='iconos', null=True) 
      categoria= models.ForeignKey(Categoria, on_delete=models.CASCADE, null=False) 
-     
      def __str__(self): 
           return self.nombre
 
