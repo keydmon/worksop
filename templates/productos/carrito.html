@@ -21,13 +21,14 @@
         <tr>
             <th><input type="number" name="cantidad" id="cantidad_{{prod.id}}" onchange="cambiarCantidad({{prod.id}})"
                     value="{{prod.cantidad}}" min="1" style="width: 80px;" datapreciou="{{prod.valUnit}}"></th>
-            <td><img src="/media/iconos/{{prod.imgPeque}}" alt="X"></td>
+            <td><img src="{{prod.imgPeque}}" alt="X"></td>
             <td>{{ prod.nombre }}</td>
             <td>{{prod.valUnit}}/{{prod.unidad}}</td>
             <td id="total_{{prod.id}}">${{prod.total}}</td>
             <td>
-                <a href="{% url 'eliminar' prod.id %}" class="btn btn-danger btn-carrito">Eliminar</a>
-                <a href="{% url 'un_producto' prod.prodId %}" class="btn btn-info btncarrito">Detalle</a>
+                <a href="{% url 'eliminar' prod.id %}" id="eliminar" class="fa-solid fa-trash"> Eliminar</a> 
+                <a href="{% url 'un_producto' prod.prodId %}" id="detalles" class="fa-solid fa-circle-info"> Detalles</a>
+
             </td>
         </tr>
         {% endfor %}
@@ -46,7 +47,9 @@
         <h6 id="envio">${{ envio }}</h6>
         <h6><strong id="total">${{ total }}</strong></h6>
     </div>
-    <a href="{% url 'pagar' %}" class="btn btn-info btn-carrito">Pagar</a>
+    <button class="btn"><i class="fa-solid fa-dollar-sign"> <a href="{% url 'pagar' %}"></a>Pagar</a></i></button>
 </div>
+
+{% comment %} <i class="fas fa-cart-shopping"> {% endcomment %}
 <!-- FIN BLOQUE PRINCIPAL -->
 {% endblock %}
