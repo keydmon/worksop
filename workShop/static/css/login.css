@@ -1,0 +1,97 @@
+.caja {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    margin: 0 auto;
+    width: 300px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    /* background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); */
+}
+
+h4 {
+    text-align: center;
+    /* border: 1px solid green; */
+    margin: 0 auto;
+    /* padding: 10px; */
+    width: 100px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#cajita {
+    /* border: solid red 1px; */
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#correo,
+#contra {
+    padding: 10px;
+    border: none;
+    background-color: #adacacb6;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+}
+
+#contra1 {
+    margin-top: 20px;
+}
+
+label {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+/* parte del boton de submit */
+
+
+.btn5 {
+    top: 20px;
+    margin:2rem;
+    position: relative;
+    left: 20px;
+    width: 90px;
+    height: 50px;
+    background-image: linear-gradient(45deg, #141E30 0%, #243B55 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: width 0.5s;
+    border-radius: 0.5s;
+}
+
+.btn5 * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s;
+}
+
+.btn5 i {
+    opacity: 0;
+    font-size: 30px;
+}
+
+.btn5:focus {
+    width: 50px;
+    background-image: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
+    border-radius: 50px;
+}
+.btn5 span{
+    font-size: 20px;
+}
+.btn5:focus span {
+    opacity: 0;
+}
+
+.btn5:focus i {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
