@@ -1,3 +1,18 @@
+/* codigo para modificar el scroll bar del navegador */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background:rgb(253, 105, 15);
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background:rgb(172, 70, 7);
+}
+
+
 :root {
     --fondo1: beige;
     --fondo2:white;
