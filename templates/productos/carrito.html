@@ -47,7 +47,7 @@
         <h6 id="envio">${{ envio }}</h6>
         <h6><strong id="total">${{ total }}</strong></h6>
     </div>
-    <button class="btn"><i class="fa-solid fa-dollar-sign"> <a href="{% url 'pagar' %}"></a>Pagar</a></i></button>
+    <a href="{% url 'pagar' %}" class="btn" class="fa-solid fa-dollar-sign">Pagar</a>
 </div>
 
 {% comment %} <i class="fas fa-cart-shopping"> {% endcomment %}
